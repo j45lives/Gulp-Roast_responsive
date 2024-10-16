@@ -1,84 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: "Lato", 'Helvetica Neue', sans-serif;
+    background-color: #082B59;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    line-height: 2;
 }
 
-.poppins-bold {
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-.lato-regular {
-    font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-header {
-    background-color: #082B59;
-    padding: 20px 0;
-    border-bottom: 10px solid #D98555;
-    box-sizing: border-box;
-
-}
-
-header img {
-    height: 180px;
-    width: auto;
-    margin-right: 20px;
-    box-sizing: border-box;
-
+h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
 }
 
 h1 {
-    color: #fff;
-    font-size: 40px;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 0;
 }
 
-header h1 {
-    color: #fff;
-    font-size: 24px;
+/* make images flexible */
+img {
+    max-width: 100%;
+}
+
+a {
+    color: #59331d;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+header {
+    border-bottom: 10px solid #D98555;
+
+}
+
+/* navbar styling */
+nav ul {
+    padding: 0;
     margin: 0;
-}
-
-h2 {
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
-    font-weight: 700;
-    color: #2c3e50;
-    font-size: 40px;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-p2 {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #fff;
-    margin-bottom: 20px;
-}
-
-
-*/ .logo a {
-    font-size: 1.125rem;
-    font-weight: 500;
-}
-
-.navbar-logo {
+    list-style-type: none;
     display: flex;
-    float: inline-start;
-    color: white;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
+nav li {
+    margin: 0 1rem 1rem 1rem;
+    font-size: 1.3rem;
+}
+
+/* max width on the image in pixels */
+nav .logo img {
+    max-width: 150px;
+}
+
+/* flex basis on the image container, li */
+nav .logo {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+nav a:hover {
+    color: #d98555;
+}
+
+/* establishes a white background */
+.main-bkgd {
+    background: #ffffff url('../images/gulp-bottom-beans.jpg') repeat-x bottom;
+    padding-bottom: 300px;
+}
 
 .container {
     display: grid;
@@ -98,15 +100,15 @@ p2 {
 
 }
 
-.flex-container {
+.main-bkgd {
+    background: #ffffff url('../images/gulp-bottom-beans.jpg') repeat-x bottom;
+    padding-bottom: 300px;
+}
+
+.main {
     display: grid;
-    grid-template-columns: 50% 50%;
-    font-family: "Lato", Arial, Helvetica, sans-serif;
-    /* width: 100vw; */
-    box-sizing: border-box;
-    padding: 50px;
-    background-color: #fff;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    gap: .5rem;
+    padding: .5rem;
 }
 
 .image-container {
