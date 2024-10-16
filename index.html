@@ -24,22 +24,63 @@
 
 </head>
 
-<main>
-    <section id="about.html">
-        <h2>About Us</h2>
-        <p>This is the content for section 1.</p>
-    </section>
+<style>
+    body,
+    html {
 
-    <section id="products.html">
-        <h2>Our Products</h2>
-        <p>This is the content for section 2.</p>
-    </section>
+        height: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #082B59;
+    }
 
-    <section id="contact.html">
-        <h2>Contact Us</h2>
-        <p>This is the content for section 3.</p>
-    </section>
-</main>
+    .splash-container {
+        text-align: center;
+    }
+
+    .logo {
+        max-width: 50%;
+        height: auto;
+    }
+
+    .links {
+        margin-top: 20px;
+    }
+
+    .links a {
+        text-decoration: none;
+        margin: 0 15px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+
+    .links a:hover {
+        background-color: #0056b3;
+    }
+</style>
+</head>
+
+<body>
+    <div class="splash-container">
+        <img src="gulp-logo-light.png" alt="Company Logo" class="logo">
+        <div class="links">
+            <ul>
+                <li><a href="about.html"><span aria-hidden="true" class="fa-solid fa-mug-saucer"></span> About</a></li>
+                <li><a href="products.html"><span aria-hidden="true" class="fa-solid fa-fire-flame-curved"></span>
+                        Products</a></li>
+                <li><a href="contact.html"><span aria-hidden="true" class="fa-solid fa-phone"></span> Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
 
 <footer>
     <p>&copy; 2024 James Warren Gaile III. All rights reserved.</p>
