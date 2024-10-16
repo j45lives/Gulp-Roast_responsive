@@ -73,30 +73,12 @@ p2 {
     font-weight: 500;
 }
 
-.navbar {
-    justify-content: end;
-    box-sizing: border-box;
-
-    */
-}
-
 .navbar-logo {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    display: flex;
-    flex-grow: 1;
-    float: left;
-    justify-content: flex-start;
-    text-decoration: none;
+    float: inline-start;
     color: white;
-    font-size: 24px;
 }
 
-.nav {
-    flex-wrap: wrap;
-    flex-shrink: 3;
-}
 
 .container {
     display: grid;
@@ -136,7 +118,6 @@ p2 {
 }
 
 
-}
 
 footer {
     background-color: #082B59;
