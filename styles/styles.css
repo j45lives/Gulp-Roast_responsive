@@ -19,6 +19,7 @@ h3 {
 h1 {
     font-size: 2rem;
     margin-bottom: 0;
+    font-weight: 700;
 }
 
 /* make images flexible */
@@ -80,43 +81,174 @@ nav a:hover {
 .main-bkgd {
     background: #ffffff url('../images/gulp-bottom-beans.jpg') repeat-x bottom;
     padding-bottom: 300px;
-}
-
-.container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    font-family: "Lato", Arial, Helvetica, sans-serif;
-    /* width: 100vw; */
-    box-sizing: border-box;
-    padding: 60px;
-    background-color: #fff;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-}
-
-.content {
-    text-align: left;
-    margin-right: 40px;
-    box-sizing: border-box;
 
 }
 
-.main-bkgd {
-    background: #ffffff url('../images/gulp-bottom-beans.jpg') repeat-x bottom;
-    padding-bottom: 300px;
+article h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+section h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.contact p {
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 .main {
     display: grid;
     gap: .5rem;
+    padding-top: 400px;
     padding: .5rem;
 }
 
-.image-container {
-    /* width: 100vw; */
-    box-sizing: border-box;
-    height: auto;
-    max-width: 100%;
-    /* Ensure image doesn't exceed its original width */
+.about .main {
+    grid-template-rows: repeat(2fr);
+}
+
+.products article {
+    padding: 0 2rem;
+}
+
+figure {
+    background-color: white;
+    text-align: center;
+}
+
+figure img {
+    border-radius: 10px;
+}
+
+.contact img {
+    border-radius: 10px;
+}
+
+figcaption {
+    color: #f2f2f2;
+    padding: 0.5rem;
+    display: none;
+}
+
+/* sits inside of the white background, centered */
+@media (min-width: 768px) {
+    .about .main {
+        grid-template-columns: 3fr 1fr;
+    }
+
+    .about figcaption {
+        display: block;
+    }
+
+    figure img {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    figure {
+        text-align: left;
+        margin: 3rem 0 0 0;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+
+    .contact .main {
+        grid-template-columns: 2fr 2fr;
+        padding: 2rem;
+        align-items: center;
+    }
+
+    .products article {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 1rem;
+        align-items: top;
+
+        & h2 {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .about .main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .about figcaption {
+        display: reset;
+    }
+
+    .products .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .products article {
+        grid-template-columns: 1fr;
+    }
+
+    .products article:nth-of-type(1) {
+        order: 2;
+
+        & figure {
+            order: 2;
+        }
+    }
+
+    .products article:nth-of-type(2) {
+        order: 1;
+
+    }
+
+    .swap {
+        order: 1;
+
+    }
+
+    .products article:nth-of-type(3) {
+        order: 2;
+    }
+
+    nav ul {
+        flex-flow: row wrap;
+        justify-content: end;
+        align-items: center;
+    }
+
+    nav li {
+        margin: 0 1rem;
+    }
+
+    nav .logo {
+        flex-basis: initial;
+        flex-grow: 10;
+        text-align: left;
+    }
+}
+
+
+.button {
+    display: inline-block;
+    background-color: #59331D;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    margin: 0;
+    color: #f2f2f2;
+    text-decoration: none;
+    border: 3px solid #59331d;
+}
+
+.button:hover {
+    background-color: #f2f2f2;
+    color: #59331d;
 }
 
 
