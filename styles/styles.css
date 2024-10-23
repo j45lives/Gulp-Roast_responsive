@@ -64,12 +64,10 @@ nav li {
     font-size: 1.3rem;
 }
 
-/* max width on the image in pixels */
 nav .logo img {
     max-width: 150px;
 }
 
-/* flex basis on the image container, li */
 nav .logo {
     flex-basis: 100%;
     text-align: center;
@@ -85,7 +83,6 @@ nav a:hover {
     color: #d98555;
 }
 
-/* establishes a white background */
 .main-bkgd {
     background: #ffffff url('../images/gulp-bottom-beans.jpg') repeat-x bottom;
     padding-bottom: 300px;
